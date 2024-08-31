@@ -7,19 +7,39 @@
 
 .form input[type='text']{
   height: 40px;
+  width: 300px;
   padding: 0 20px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  min-height: 80%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.form input[type='text']:focus {
+  border-color: #51c5de;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 
 .form button[type='submit']{
   border: none;
   height: 40px;
   width: 40px;
-  background: #f04c64;
+  font-size: 16px;
+  background: linear-gradient(135deg, #ff4081, #f04c64);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
+
+.form button[type='submit']:hover {
+  background: linear-gradient(135deg, #f04c64, #ff4081);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+

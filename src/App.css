@@ -6,10 +6,7 @@
 }
 
 body{
-  font-family: sans-serif;
-  background: #0a4f70;
-}
-
-button{
-  cursor: pointer;
+  font-family: serif;
+  background: linear-gradient(135deg, #0a4f70, #004d6e, #00334d);
+  background-attachment: fixed;
 }
